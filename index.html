@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flash Card Musculação</title>
+</head>
+<body>
+    <main>
+        <section id="container">
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Powerlifting</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p> Qual o principal objetivo de um treino de força bruta?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>Aumentar a força máxima em três movimentos fundamentais: agachamnento, supino e levantamento terra.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Testosterona</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Qual a impôrtancia da testosterona no ganho de massa e performance?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>A testosterona é o principal hormônio responsável pelo aumento de massa muscular, força e recuperação muscular.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Descanso</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Por que o descanso e o sono são tão importantes quanto o treino pesado?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>Porque é durante o sono profundo e o descanso que o corpo se recupera, reconstrói fibras musculares e libera hôrmonios anabólicos sem descanso não há crescimento.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Disciplina</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Qual é papel da disciplina no processo da transformação física?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>A disciplina é o que separa os fracos dos comprometidos.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
+    </footer>
+    <script src="app.js"></script>
+    <script>
+        // Adiciona o evento de clique para virar os cartões já existentes no HTML
+        document.querySelectorAll('.cartao').forEach(cartao => {
+            cartao.addEventListener('click', viraCartao);
+        });
+    </script>
+</body>
+</html>
